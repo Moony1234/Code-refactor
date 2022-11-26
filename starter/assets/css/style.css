@@ -1,0 +1,187 @@
+/* Remove default margin*/
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: cursive;
+}
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+/* Navbar Style Starts */
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+ background-color:  #2a607c;
+ color: #fff;
+ position: right;
+}
+
+.nav-links a {
+ color: #fff;
+}
+/* Logo */
+.logo {
+ font-size: 32px;
+}
+/* Navbar Menu-bar */
+.menu-bar {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+/* Hover Menu-bar background color*/
+.menu-bar li:hover {
+ background-color:  black;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu-bar li {
+ padding: 5px 14px;
+}
+/* checkboxr*/
+input[type=checkbox]{
+ display: none;
+}
+
+p {
+    font-size: 16px;
+}
+/* Main Pic */
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+/* content of the page Starts */
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.div h1{
+  font-size: 100px;
+}
+/* aside section Starts */
+.benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:  #2a607c;
+}
+
+.benefit-lead,
+.benefit-brand,
+.benefit-cost  {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+/* aside headers(titles) */
+.benefit-lead h3,
+.benefit-brand h3,
+.benefit-cost h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* images aside section */
+.benefit-lead img,
+.benefit-brand img,
+.benefit-cost img {
+    display: block;
+    margin: 1px auto;
+    max-width: 150px;
+}
+/* Contents style */
+#search-engine-optimization,
+#online-reputation-management,
+#social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:  #2a607c;
+    color: #ffffff;
+}
+/* Images size */
+#search-engine-optimization img,
+#online-reputation-management img,
+#social-media-marketing img {
+    max-height: 200px;
+}
+/* Contents headers(titles) */
+#search-engine-optimization h2,
+#online-reputation-management h2,
+#social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/* footer section Starts */
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+/*HAMBURGER Menu*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu-bar {
+ display:none;
+ position: absolute;
+ background-color: black;
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+}
+.menu-bar li:hover {
+ display: inline-block;
+ background-color:#ff00ff;
+ transition: 0.3s ease;
+}
+.menu-bar li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu-bar{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+}
