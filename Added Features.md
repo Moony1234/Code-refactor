@@ -1,5 +1,5 @@
 # Code-refactor
-## added features
+## Added Features
 Actually, I have added some features to the websites.
 - I have added a navbar menu when the web is going to use on mobile devices or tablets,
   it will show an icon of the title headers. 
